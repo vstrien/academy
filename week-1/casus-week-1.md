@@ -13,13 +13,14 @@ De opdracht is daarom als volgt:
 
 * Maak een globaal ontwerp van je data-oplossing. Zorg hierbij minimaal voor de volgende zaken:
   * Een globale logische architectuur (integratielaag, presentatielaag, “landing zone”)
-    * Voor inspiratie: [Meer informatie over een Data Warehouse architectuur](http://lmgtfy.com/?q=data+warehouse+architecture)
+    * Voor inspiratie: [Meer informatie over een Data Warehouse architectuur](http://lmgtfy.com/?t=i&q=data+warehouse+architecture)
   * Een korte schriftelijke onderbouwing over je keuzes (dit breiden we in de loop van de Academy verder uit)
 * Richt een staging area in voor de CSV-bronnen
   * Maak een aparte database aan voor de staging
   * Plaats alle tabellen in het schema ‘staging’
   * Bedenk hoe het proces eruit gaat zien van het laden van je staging area
-  * Richt standaardprocedures in om je tabellen leeg te kunnen maken
+  * Maak scripts om je tabellen leeg te kunnen maken
+    * Bonus: zet deze in _stored procedures_ per tabel
   * Analyseer de aangeleverde bestanden, bepaal welke datatypes je nodig hebt en ontwerp de tabellen
     * In een staging area is geen referentiële integriteit nodig of aanwezig
     * Constraints en keys zijn ook niet nodig in de staging area
