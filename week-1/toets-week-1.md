@@ -39,7 +39,17 @@ De toets bestaat uit een aantal vragen en SQL-statements waarvan je de uitkomst 
 ### Vragen
 
 * Wat is het verschil tussen `NVARCHAR(3)` en `VARCHAR(3)`?
+
+```SQL
+DECLARE @var INT;
+
+SET @var = 3.234;
+
+SELECT @var;
+```
+
 * De variabele `@var` is gedefinieerd door `DECLARE @var INT`. Vervolgens wijzen we er de waarde `3.234` aan toe via `SET @var = 3.234`. Wat is nu het resultaat als we `SELECT @var` uitvoeren?
+
 * We willen een kolom `Leverancier` toevoegen aan de tabel `Product`. Leveranciers willen we kunnen opslaan met een precisie van 100 tekens.
   * Beschrijf het statement hoe je deze toevoegt (hint: `ALTER TABLE xxx ADD COLUMN yyy`)
   * Bedenk goed of je `NULL`-waarden wilt toestaan, en schrijf op waarom!
