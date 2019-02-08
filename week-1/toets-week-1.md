@@ -53,9 +53,17 @@ SELECT @var;
 * We willen een kolom `Leverancier` toevoegen aan de tabel `Product`. Leveranciers willen we kunnen opslaan met een precisie van 100 tekens.
   * Beschrijf het statement hoe je deze toevoegt (hint: `ALTER TABLE xxx ADD COLUMN yyy`)
   * Bedenk goed of je `NULL`-waarden wilt toestaan, en schrijf op waarom!
-* Nu de kolom `Leverancier` is toegevoegd, willen we er ook data in doen. Schrijf een `UPDATE` statement om de leverancier `Vistaprint` toe te voegen aan het product `Beker`
-* De tabel "Product" heeft een `IDENTITY(1,1)` als eigenschap bij de kolom `product_id`
-* Voeg een nieuwe rij toe aan de tabel `Product`, met de volgende waarden:
+* Nu de kolom `Leverancier` is toegevoegd, willen we er ook data in opslaan. Schrijf een `UPDATE` statement om de leverancier `Vistaprint` toe te voegen aan het product `Beker`. De tabel ziet er hierna dus als volgt uit:
+
+| Product_id | Naam   | Leverancier |
+|------------|--------|-------------|
+| 1          | Auto   |             |
+| 2          | Beker  | Vistaprint  |
+| 3          | Cactus |             |
+
+De tabel "Product" heeft een `IDENTITY(1,1)` als eigenschap bij de kolom `product_id`
+
+* Schrijf een SQL-statement dat een een nieuwe rij toevoegt aan de tabel `Product`, met de volgende waarden:
   * Naam: Doos
   * Leverancier: Verpakkingsmaterialen B.V.  
 * Schrijf een `SELECT` statement waarin je alle tabellen aan elkaar koppelt.
@@ -68,9 +76,9 @@ SELECT @var;
       * "Geen voertuig" voor alle overige gevallen
     * KleurBehalveGeel:
       * NULL as de kleur geel is
-      * De naam van de kleur in alle overige gevallen 
+      * De naam van de kleur in alle overige gevallen
     * Bonus: KleurBehalveGeelv2:
-      * Inhoud identiek aan KleurBehalveGeel, maar dan op een andere manier opgelosts
+      * Inhoud identiek aan KleurBehalveGeel, maar dan op een andere manier opgelost
 * Schrijf de uitkomst van bovenstaand statement uit
 * Schrijf een `SELECT`-statement dat de kleuren weergeeft waar momenteel geen producten bij geregistreerd staan.
   * Alleen de kleurnaam is voldoende
