@@ -22,9 +22,17 @@ De opdracht is daarom als volgt:
   * Maak scripts om je tabellen leeg te kunnen maken
     * Bonus: zet deze in _stored procedures_ per tabel
   * Analyseer de aangeleverde bestanden, bepaal welke datatypes je nodig hebt en ontwerp de tabellen
+    * *Niet valsspelen door naar bestaande AdventureWorks-databases kijken!*
     * In een staging area is geen referentiële integriteit nodig of aanwezig
-    * Constraints en keys zijn ook niet nodig in de staging area
-    * De GUID-kolommen mag je weglaten in de staging area
+    * Constraints en (primary / foreign) keys zijn ook niet nodig in de staging area
+    * Blijf bij de basis datatypes:
+      * `int` / `bigint`
+      * `bit`
+      * `decimal`
+      * `nchar`
+      * `nvarchar`
+      * `datetime2`, `datetime`, `date`
+      * `xml` mag je gebruiken, maar je kunt ook een `nvarchar(max)` gebruiken hiervoor
   * Bewijs dat de staging area ook de CSV-data kan bevatten, bijvoorbeeld door de “Import/Export data wizard” van SSMS te gebruiken.
 * Voer de volgende analyses uit:
   * Geef de top 5 best verkopende klanten weer op basis van klantnummer
