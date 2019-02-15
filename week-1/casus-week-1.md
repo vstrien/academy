@@ -33,7 +33,7 @@ De opdracht is daarom als volgt:
     * Klantnummer te vinden in AccountNumber in de tabel Customer (let op: deze wijkt af van de tabel SalesOrderHeader!)
   * Geef de top 10% best verkopende steden waar er vanuit het huisadres besteld is (AddressType is "Home")
   * Geef het maximale verschil tussen orderdatum en betaaldatum ("OrderDate" en "DueDate") per land ("CountryRegionCode") waarheen verzonden is.
-  * De verkopende van klanten op basis van klantnummer per maand en jaar. Geef de volgende informatie weer in aparte kolommen:
+  * De verkopen van klanten op basis van klantnummer per maand en jaar. Geef de volgende informatie weer in aparte kolommen:
     * Totaal verkocht aan klant in maand
     * Totaal verkocht aan klant "running total" (alle verkopen door de tijd heen tot aan de "huidige" maand)
       * Bedenk (en maak expliciet) hoe de "running total" gevormd wordt
