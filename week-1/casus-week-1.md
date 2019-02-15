@@ -22,6 +22,7 @@ De opdracht is daarom als volgt:
   * Maak scripts om je tabellen leeg te kunnen maken
     * Bonus: zet deze in _stored procedures_ per tabel
   * Analyseer de aangeleverde bestanden, bepaal welke datatypes je nodig hebt en ontwerp de tabellen
+    * *Niet valsspelen door naar bestaande AdventureWorks-databases kijken!*
     * In een staging area is geen referentiële integriteit nodig of aanwezig
     * Constraints en keys zijn ook niet nodig in de staging area
     * De GUID-kolommen mag je weglaten in de staging area
