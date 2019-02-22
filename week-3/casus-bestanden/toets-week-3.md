@@ -4,7 +4,7 @@ Het is inmiddels week 4, maar de toets van deze week gaat over week 3.
 
 Opnieuw geldt hier:
 
-Er zijn de afgelopen weken behoorlijk wat nieuwe onderwerpen de revue gepasseerd. Om een beeld te krijgen van hoe dit geland is, krijg je deze toets. Deze is primair niet bedoeld als beoordeling, maar als indicator voor de onderwerpen die nog extra aandacht nodig hebben.
+Er zijn de afgelopen weken behoorlijk wat nieuwe onderwerpen de revue gepasseerd. Om een beeld te krijgen van hoe dit geland is, krijg je deze toets. Deze is primair niet bedoeld als beoordeling, maar als indicator voor de onderwerpen die nog extra aandacht nodig hebben. Omdat SSIS en SSRS lastig te toetsen zijn 
 
 ## 3NF-Modelleren
 
