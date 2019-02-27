@@ -38,22 +38,22 @@ Het scherm ziet er nu als volgt uit:
 
 Merk de volgende zaken op:
 
-1. Linksboven zie je drie knoppen, waarmee je tussen drie weergaven van je Power BI model kunt schakelen:
-   * Report
-   * Data
-   * Relationships
-2. Bovenin zie je een "ribbon" (of "lint"), die net werkt als in Office kent. De lint heeft vijf onderdelen:
-   * File (menu): Vergelijkbaar met het gelijknamige menu uit Office: opslaan, exporteren, printen en instellingen.
-   * Home: Hier staan de meeste "basis" zaken die je nodig hebt voor het maken van Power BI-rapportages.
-   * View: Hier kun je visuele hulpmiddelen aan- en uitzetten, en schakelen tussen de mobiele weergave en de desktop-weergave
-   * Modeling: Hier staan specifieke zaken voor het inrichten van je datamodel
-   * Help: Dit is een bijzonder ingewikkeld concept, dat voor nu te ver reikt om uit te leggen ;-).
-3. Aan de rechterzijde (paars omlijn hierboven) zie je het Visualizations-pane. Deze kun je inklappen door op "Visualizations" te klikken (try!). Er zijn drie onderdelen in dit pane:
-   * Visualizations: De verschillende visualisaties die je in een rapport kunt gebruiken
-   * Filters: filters die van toepassing zijn op het huidige rapport, de huidige pagina, of de huidige visual
-   * Drilltrough: Bijzondere drillthrough-filters (meer hierover later)
-4. Uiterst rechts op het scherm (rood omrand) is het Fields-pane. Ook deze kun je inklappen. Hier zie je een lijst van alle tabellen, kolommen en measures die in je datamodel aanwezig zijn
-5. Binnen de Report-weergave, zie je onderin de verschillende pagina's van een rapport
+1. Linksboven zie je drie knoppen, waarmee je tussen *drie weergaven* van je Power BI model kunt schakelen:
+   * *Report*
+   * *Data*
+   * *Relationships*
+2. Bovenin zie je een *ribbon* (of "lint"), die net werkt als in Office kent. De lint heeft vijf onderdelen:
+   * *File* (menu): Vergelijkbaar met het gelijknamige menu uit Office: opslaan, exporteren, printen en instellingen.
+   * *Home*: Hier staan de meeste "basis" zaken die je nodig hebt voor het maken van Power BI-rapportages.
+   * *View*: Hier kun je visuele hulpmiddelen aan- en uitzetten, en schakelen tussen de mobiele weergave en de desktop-weergave
+   * *Modeling*: Hier staan specifieke zaken voor het inrichten van je datamodel
+   * *Help*: Dit is een bijzonder ingewikkeld concept, dat voor nu te ver reikt om uit te leggen ;-).
+3. Aan de rechterzijde (paars omlijnd hierboven) zie je het *Visualizations* _pane_. Deze kun je inklappen door op "Visualizations" te klikken (try!). Er zijn drie onderdelen in dit _pane_:
+   * *Visualizations*: De verschillende visualisaties die je in een rapport kunt gebruiken
+   * *Filters*: filters die van toepassing zijn op het huidige rapport, de huidige pagina, of de huidige visual
+   * *Drilltrough*: Bijzondere drillthrough-filters (meer hierover later)
+4. Uiterst rechts op het scherm (rood omrand) is het *Fields* _pane). Ook deze kun je inklappen. Hier zie je een lijst van alle tabellen, kolommen en measures die in je datamodel aanwezig zijn
+5. Binnen de Report-weergave, zie je onderin de verschillende *pagina's* van een rapport
 6. Binnen de Report-weergave is een groot wit vel aanwezig. Hierop kun je je rapport vormgeven. De zwarte stippellijnen geven de randen aan.
 
 ## Data inladen
@@ -63,6 +63,9 @@ Importeer een CSV-bestand via "Get Data" -> "Text/CSV"
 ![Get data](img/importeer-csv.png)
 
 Importeer het bestand ["2014-01.csv"](casus-bestanden/2014-01.csv) uit de map "week-4/casus-bestanden".
+
+### Culture van een CSV-berstand
+
 Afhankelijk van de regio-instellingen van je Windows-installatie (de _culture_) gaat Power BI (net als bijv. Excel) anders met punten en komma's om:
 
 * In Nederland gebruiken we een decimale komma, en een punt als duizendtalscheiding (dus hebben we het over € 1.000,00)
@@ -77,21 +80,25 @@ Wanneer je de inhoud van ["2014-01.csv"](casus-bestanden/2014-01.csv) bekijkt, z
 ![Werkelijke waarde regel 1 2014-01](img/2014-01-csv.png)
 
 Klik in het preview-venster daarom niet op *Load* maar op *Edit*. Er opent zich nu een nieuw venster - de Power Query Editor.
-Power Query is de "ETL" van Power BI: hierin kun je allerhande bestandstypen inladen, en volgens een pipeline inladen.
-Aan de achterzijde van Power Query zit een functionele programmeertaal ("Power Query Language, informally known as M") waarmee je bijzonder krachtig pipelines kunt inrichten om data te laden in je Power BI model. *Je hoeft deze programmeertaal zelden te gebruiken* - veruit de meeste bewerkingen op je data kun je heel goed via de Ribbon doen (of via een rechtsklik op een kolom, waarmee je ook acties te zien krijgt). Eén van de uitzonderingen waar je wél de query taal nodig hebt is bij het inladen van data met een andere _culture_.
 
-Volgende week woensdag gaan we dieper in op Power Query - voor nu behandelen we alleen wat er nodig is om Power Query te kunnen gebruiken:
+### Power Query Editor
+
+Power Query is de "ETL" van Power BI: hierin kun je allerhande bestandstypen inladen, en volgens een dataflow inladen.
+
+_Aan de achterzijde van Power Query zit een functionele programmeertaal ("Power Query Language, informally known as M") waarmee je bijzonder krachtig dataflows kunt inrichten om data te laden in je Power BI model. *Je hoeft deze programmeertaal zelden te gebruiken* - veruit de meeste bewerkingen op je data kun je heel goed via de Ribbon doen (of via een rechtsklik op een kolom, waarmee je ook acties te zien krijgt). Eén van de uitzonderingen waar je wél de query taal nodig hebt is bij het inladen van data met een andere _culture_._
+
+Later gaan we dieper in op Power Query - voor nu behandelen we alleen wat er nodig is om Power Query te kunnen gebruiken:
 
 ![Power Query venster - de basics](img/power-query-venster-basics.png)
 
 1. Aan de linkerzijde zie je alle *queries*. Elke tabel die in het datamodel van Power BI opgeslagen staat heeft minimaal één query aan de achterzijde. Momenteel zie je dus één query met de naam '2014-01'.
 2. Van de geselecteerde query zie je aan de rechterzijde de *query settings*. Hier zie je twee componenten
    * De naam (dus "2014-01")
-   * De *Applied steps*. Dit is vergelijkbaar met een pipeline, en heeft een één-op-één relatie met een achterliggend stuk code
-3. De *Advanced Editor* geeft toegang tot de code die de pipeline definieert.
+   * De *Applied steps*. Dit is vergelijkbaar met een dataflow, en heeft een één-op-één relatie met een achterliggend stuk code
+3. De *Advanced Editor* geeft toegang tot de code die de dataflow definieert.
 
 * Klik op onder "Applied Steps" achtereenvolgens op "Source", "Promoted Headers" en "Changed Type". In welke stap verdwijnt de decimale punt?
-* Open de "Advanced Editor" en bekijk de code. Herken je de stappen uit de pipeline?
+* Open de "Advanced Editor" en bekijk de code. Herken je de stappen uit de dataflow?
 
 ![Advanced Power Query Editor](img/advanced-editor.png)
 
@@ -110,7 +117,7 @@ De stap waarin de decimale punt verloren gaat, is de stap met de naam `Changed T
 
 Momenteel zit er nog niet heel veel nuttige informatie in het datamodel: er is data van één periode uit 2014 aanwezig, maar alle verwijzingen naar winkels, producten en verkoopgebieden zijn enkel nog technische sleutels.
 
-Maak twee Power BI visualisaties:
+Maak nu twee Power BI visualisaties:
 
 1. TotalDue per TerritoryID
 2. TaxAmt per ProductID
@@ -178,7 +185,7 @@ Zoals je ziet wordt voor elke winkel exact hetzelfde bedrag aan vrachtkosten ("f
 
 Om relaties aan te maken, schakel je naar de "Relationships" weergave.
 
-![Relationships weergave in Power BI](img/relationsihps.png)
+![Relationships weergave in Power BI](img/relationships.png)
 
 Zoals je ziet, liggen er diverse relaties, weergegeven door lijntjes tussen de tabellen. Wanneer op een relatie klikt, zie je hoe de relatie loopt en welke kolommen naar elkaar refereren. In een relatie zijn drie belangrijke kenmerken:
 
@@ -217,13 +224,25 @@ Om het model leesbaarder te houden, kunnen we overbodige kolommen verwijderen of
 Voer de volgende zaken uit om het model leesbaarder te maken:
 
 * Hernoem de tabellen
+  * Person CountryRegion -> Country-Region
+  * Sales SalesTerritory -> Sales Territory
+  * Production Product -> Product
+  * Production ProductSubcategory -> Product Subcategory
+  * Production ProductCategory -> Product Category
 * Hernoem de kolommen "Name" in elke tabel, zodat duidelijk is welke naam iets is
-  * Bijv. "StoreName" in plaats van "Name"
+  * Bijv. in de tabel "Store" de kolom "Name" -> "Store Name"
 * Verberg alle ID-kolommen
 * Verwijder kolommen met XML- en GUID-data
 
 ### Calculated Columns
 
 In de "Data"-weergave van Power BI kun je eenvoudig bekijken welke data er momenteel in het datamodel zit.
+
 We kunnen hier kolommen toevoegen die gevuld worden op basis van een DAX-expressie. Dit noemen we "Calculated columns".
-Voeg een nieuwe kolom toe aan de tabel "ProductSubcategory" met de naam "ProductCategory". Vul hier de expressie `=RELATED('ProductCategory'[CategoryName])` in.
+
+* Voeg een nieuwe kolom toe aan de tabel "ProductSubcategory" met de naam "Product Category". Vul hier de expressie `=RELATED('ProductCategory'[CategoryName])` in.
+* Verberg nu de gehel tabel ProductCategory
+
+Wanneer je nu naar de Report-weergave gaat, zul je zien dat er een tabel minder staat, en de naam van een productcategorie wordt weergegeven onder de tabel Product Subcategory.
+
+* Herhaal bovenstaande stappen om nu de naen van zowel de *productcategorie* als de *productsubcategorie* direct op te nemen in de *Product* tabel. Verberg ook de tabel *Product Subcategory*
