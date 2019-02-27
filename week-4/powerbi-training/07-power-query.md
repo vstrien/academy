@@ -8,14 +8,15 @@ In de meeste Power BI modellen zul je echter deze code niet hoeven te gebruiken:
 
 Van één van onze analisten hebben we de vraag gekregen of er data kan worden toegevoegd over bevolkingscijfers aan het Power BI-model. Ze heeft de data aangeleverd in een [Excel-bestand](excel-aanlevering/pop-by-year.xlsx), dat er min of meer als volgt uitziet (voor de exacte indeling: open het [Excel-bestand](excel-aanlevering/pop-by-year.xlsx)):
 
-| Total population is based on (...) |  |  |
-| --- | --- | --- |
-| Source | http://data.worldbank.org/indicator/SP.POP.TOTL |  |
-| Terms of use | http://data.worldbank.org/summary-terms-of-use |  |
-|  |  |  |
-| Country Name | 1999 | 2000 |
-| Canada | 30499200 | 30769700 |
-| Germany | 82100243 | 82211508 |
+| Total population is based on (...) |  |  |  |
+| --- | --- | --- | --- |
+| Source | http://data.worldbank.org/indicator/SP.POP.TOTL |  |  |
+| Terms of use | http://data.worldbank.org/summary-terms-of-use |  |  |
+|  |  |  |  |
+| Country Name | 1999 | 2000 | (...) |
+| Canada | 30499200 | 30769700 | (...) |
+| Germany | 82100243 | 82211508 | (...) |
+| (...) | (...) | (...) | (...) |
     
 Dit is een structuur die traditioneel lastig in te lezen is in ETL-tools:
 
