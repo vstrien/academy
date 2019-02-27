@@ -29,6 +29,7 @@ Installeer Power BI op je laptop, en start het programma. De eerste keer krijg j
 ![Registration form](img/sign-in-powerbi.png).
 
 Klik op de link "Already have a Power BI account? Sign in" onderin het venster. Je kunt hier waarschijnlijk inloggen met je Sigma Data-account.
+
 (Het zou kunnen dat Power BI aangeeft dat je je hier voor moet registreren - doe dit dan. Als je dit proces in de browser volledig doorlopen hebt, kun je binnen enkele minuten met je Sigma Data-account inloggen bij Power BI Desktop).
 
 Het scherm ziet er nu als volgt uit:
