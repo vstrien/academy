@@ -30,10 +30,12 @@ Voer de volgende zaken uit om het model leesbaarder te maken:
   * Production Product -> Product
   * Production ProductSubcategory -> Product Subcategory
   * Production ProductCategory -> Product Category
+  * "2014-01" -> Sales
 * Hernoem de kolommen "Name" in elke tabel, zodat duidelijk is welke naam iets is
   * Bijv. in de tabel "Store" de kolom "Name" -> "Store Name"
+* Hernoem de kolom "Group" in de tabel "Sales Territory" naar "Sales Territory Group"
 * Verberg alle ID-kolommen
-* Verwijder kolommen met XML- en GUID-data
+* Verwijder kolommen met XML- en GUID-data, en kolommen met "ModifiedDate"
 
 ## Calculated Columns
 
@@ -41,22 +43,21 @@ In de "Data"-weergave van Power BI kun je eenvoudig bekijken welke data er momen
 
 We kunnen hier kolommen toevoegen die gevuld worden op basis van een DAX-expressie. Dit noemen we "Calculated columns".
 
-* Voeg een nieuwe kolom toe aan de tabel "ProductSubcategory" met de naam "Product Category". Vul hier de expressie `=RELATED('ProductCategory'[CategoryName])` in.
-* Verberg nu de gehel tabel ProductCategory
+* Voeg een nieuwe kolom toe aan de tabel "ProductSubcategory"
+  * Typ de onderstaande expressie handmatig in:
+  * Expressie: `Product Category = RELATED('Product Category'[Product Category Name])`
+* Verberg nu de gehele tabel ProductCategory
 
-Wanneer je nu naar de Report-weergave gaat, zul je zien dat er een tabel minder staat, en de naam van een productcategorie wordt weergegeven onder de tabel Product Subcategory.
+Wanneer je nu naar de Report-weergave gaat, zul je zien dat er een tabel minder staat, en de naam van een productcategorie wordt weergegeven onder de tabel Product Subcategory. Er staat een klein "F(x)" teken bij om aan te geven dat het een calculated column is.
 
 * Herhaal bovenstaande stappen om nu de naen van zowel de *productcategorie* als de *productsubcategorie* direct op te nemen in de *Product* tabel. Verberg ook de tabel *Product Subcategory*
 * Voeg op dezelfde wijze de naam uit *Country-Region* toe aan *Sales Territory*, en verberg de tabel *Country-Region*
 
 Zoals je ziet kun je hiermee relatief eenvoudig je model "platslaan" en meer toegankelijk maken voor gebruikers van Power BI.
 
-
-
 ## Volgende modules
 
 De volgende module is [Module 6: Meer calculated columns](06-calc-columns.md). Hieronder vind je een overzicht van alle modules:
-
 
 1. [Introductie Power BI Desktop](01-introductie-powerbi-desktop.md)
 2. [CSV-data inladen, introductie Power Query en eerste visualisatie](02-csv-inladen.md)
@@ -65,5 +66,3 @@ De volgende module is [Module 6: Meer calculated columns](06-calc-columns.md). H
 5. *Opschonen en introductie calculated columns* (huidige module)
 6. [Meer calculated columns](06-calc-columns.md)
 7. [Power Query via de GUI](07-power-query.md)
-
-

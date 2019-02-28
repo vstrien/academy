@@ -2,7 +2,7 @@
 
 ## Beschrijving
 
-In deze workshop verkennen we *Power BI* - de self-service visualisatietool van Microsoft. 
+In deze workshop verkennen we *Power BI* - de self-service visualisatietool van Microsoft.
 
 De diensten en producten die onder Power BI vallen bestaat uit diverse onderdelen:
 
@@ -27,6 +27,3 @@ In deze workshop komen alle drie de onderwerpen kort aan bod, in de volgende mod
 5. [Opschonen en introductie calculated columns](05-opschonen.md)
 6. [Meer calculated columns](06-calc-columns.md)
 7. [Power Query via de GUI](07-power-query.md)
-
-
-

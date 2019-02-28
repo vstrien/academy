@@ -10,14 +10,14 @@ Van één van onze analisten hebben we de vraag gekregen of er data kan worden t
 
 | Total population is based on (...) |  |  |  |
 | --- | --- | --- | --- |
-| Source | http://data.worldbank.org/indicator/SP.POP.TOTL |  |  |
-| Terms of use | http://data.worldbank.org/summary-terms-of-use |  |  |
+| Source | `http://data.worldbank.org/indicator/SP.POP.TOTL` |  |  |
+| Terms of use | `http://data.worldbank.org/summary-terms-of-use` |  |  |
 |  |  |  |  |
 | Country Name | 1999 | 2000 | (...) |
 | Canada | 30499200 | 30769700 | (...) |
 | Germany | 82100243 | 82211508 | (...) |
 | (...) | (...) | (...) | (...) |
-    
+
 Dit is een structuur die traditioneel lastig in te lezen is in ETL-tools:
 
 * Diverse beschrijvende rijen
@@ -45,11 +45,9 @@ De uitkomst moet er als volgt uit zien:
 
 ![Uitkomst van Power Query GUI oefening](img/uitkomst-powerquery.png)
 
-
 ## Volgende modules
 
 Dit was de laatste module van de Power BI introductieworkshop. Hieronder vind je een overzicht van alle modules:
-
 
 1. [Introductie Power BI Desktop](01-introductie-powerbi-desktop.md)
 2. [CSV-data inladen, introductie Power Query en eerste visualisatie](02-csv-inladen.md)
@@ -58,5 +56,3 @@ Dit was de laatste module van de Power BI introductieworkshop. Hieronder vind je
 5. [Opschonen en introductie calculated columns](05-opschonen.md)
 6. [Meer calculated columns](06-calc-columns.md)
 7. *Power Query via de GUI* (huidige module)
-
-

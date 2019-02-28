@@ -2,7 +2,7 @@
 
 ## Power BI Desktop downloaden
 
-Het programma "Power BI Desktop" kun je downloaden vanaf de Windows Store, of vanaf [www.powerbi.com](https://powerbi.microsoft.com/nl-nl/). Wanneer het mogelijk is, installeer Power BI dan vanuit de Windows Store: dit zorgt ervoor dat je automatisch updates e.d. krijgt, en deze niet handmatig hoeft te downloaden. 
+Het programma "Power BI Desktop" kun je downloaden vanaf de Windows Store, of vanaf [www.powerbi.com](https://powerbi.microsoft.com/nl-nl/). Wanneer het mogelijk is, installeer Power BI dan vanuit de Windows Store: dit zorgt ervoor dat je automatisch updates e.d. krijgt, en deze niet handmatig hoeft te downloaden.
 
 Installeer Power BI op je laptop, en start het programma. De eerste keer krijg je het volgende venster te zien:
 
@@ -47,4 +47,3 @@ De volgende module is [Module 2: CSV-data inladen, introductie Power Query en ee
 5. [Opschonen en introductie calculated columns](05-opschonen.md)
 6. [Meer calculated columns](06-calc-columns.md)
 7. [Power Query via de GUI](07-power-query.md)
-
