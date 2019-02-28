@@ -45,6 +45,23 @@ De uitkomst moet er als volgt uit zien:
 
 ![Uitkomst van Power Query GUI oefening](img/uitkomst-powerquery.png)
 
+## Bonus: de gekste datastructuren
+
+Tot nu toe hebben we data van vier soorten bronnen ingeladen:
+
+* CSV
+* SQL Server
+* Azure SQL Database
+* Excel-bestanden in een onhandig formaat
+
+Voor de bonus voegen we hier nog één bron aan toe: de IMDB top 250 van films [http://www.imdb.com/chart/top](http://www.imdb.com/chart/top). Hier kunnen we niet direct analyses op doen die aansluiten op ons huidige model, maar het geeft wel mooi aan wat er allemaal mogelijk is in Power BI.
+
+Hieronder staat een screenshot hoe de data er uit moet komen te zien in Power Query. Je kunt de data inladen met "Get Data" -> "From Web".
+
+![IMDB top 250 transformed](img/imdb-transformed.png)
+
+Tip: Je zult hier de "split column" functionaliteit regelmatig nodig hebben
+
 ## Volgende modules
 
 Dit was de laatste module van de Power BI introductieworkshop. Hieronder vind je een overzicht van alle modules:
