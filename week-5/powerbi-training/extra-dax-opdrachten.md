@@ -5,8 +5,8 @@ In de map "Starter" vind je een Power BI bestand genaamd "PBI-file-2.pbix". Voeg
 1. Geef een tabel weer met hierin de volgende kolommen (voor kolommen 2 t/m 4 drie aparte measures aanmaken):
    * Landnaam
    * Verkopen ($) in land
-   * Verkopen ($) totaal (dus ook buiten de stad)
-   * Percentage van verkopen binnen de stad
+   * Verkopen ($) totaal (dus ook buiten een land)
+   * Percentage van verkopen binnen een land t.o.v. alle verkopen
 2. Geef een grafiek met hierin de verkopen per kleur, geïndexeerd op geel (dus verkopen van gele producten = 100%). Gebruik hier een measure voor
 3. Geef de Product-tabel een calculated column met daarin de _ranking_ van prijs (duurste = 1)
 4. Geef de Product-tabel een calculated column met hierin hoeveel er van een bepaald product in totaal verkocht is.
