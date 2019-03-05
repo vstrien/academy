@@ -20,7 +20,7 @@ Wanneer je complexere DAX-functies gaat schrijven, bedenk dan dat het oplossen v
 4. Zorg ervoor dat je de marge ook *procentueel* kunt weergeven (marge als percentage van de verkoopprijs). Bedenk zelf of je hier een _calculated column_ of een _measure_ voor nodig hebt.
 5. Maak een _calculated column_ binnen _DimProductCategory_. Sla hier het _daadwerkelijke_ margepercentage op binnen de productcategorie
 6. Maak een _calculated column_ binnen _DimProductSubcategory_. Sla hier de totale marge in op (in dollars) die in het jaar 2012 binnengekomen is.
-7. (Deze is pittig!) Maak twee _measures_ waarin je de _SalesAmount_ weergeeft van
+7. (Deze is pittig!) Maak twee _measures_ waarin je de _SalesAmount_ weergeeft van respectievelijk:
    * de reseller die het _minst_ gekocht heeft (dit is +/- € 1,37)
    * de reseller waarvan de naam start met een A en het minst gekocht heeft (€ 381,19)
    * Hints:
