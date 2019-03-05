@@ -11,7 +11,7 @@ Wanneer je complexere DAX-functies gaat schrijven, bedenk dan dat het oplossen v
 
 1. Maak een _calculated column_ in *FactResellerSales*, waarin je de kolom *SalesTerritoryCountry* uit de *DimSalesTerritory* ophaalt.
    * Via welke relatie wordt deze opgehaald?
-   * Bonus: maak een tweede measure die via de niet-actieve relatie de _SalesTerritoryCountry_ ophaalt
+   * Bonus: maak een tweede calculated column die via de niet-actieve relatie de _SalesTerritoryCountry_ ophaalt
       * Zitten er verschillen in deze registratie?
 2. De *margin* voor een product is bepaald door de "lijstprijs" (*listprice*) minus de kosten (*standardcost*). Maak een grafiek waarin je de *margin* per product weergeeft. Probeer dit op twee manieren op te lossen:
    * Maak een _calculated column_ binnen _DimProduct_
