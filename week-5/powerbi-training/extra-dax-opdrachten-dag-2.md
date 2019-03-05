@@ -21,8 +21,8 @@ Wanneer je complexere DAX-functies gaat schrijven, bedenk dan dat het oplossen v
 5. Maak een _calculated column_ binnen _DimProductCategory_. Sla hier het _daadwerkelijke_ margepercentage op binnen de productcategorie
 6. Maak een _calculated column_ binnen _DimProductSubcategory_. Sla hier de totale marge in op (in dollars) die in het jaar 2012 binnengekomen is.
 7. (Deze is pittig!) Maak twee _measures_ waarin je de _SalesAmount_ weergeeft van
-   * de klant die het _minst_ gekocht heeft (globaal is dit € 1,37)
-   * de klant waarvan de naam start met een A en het minst gekocht heeft (€ 381,19)
+   * de reseller die het _minst_ gekocht heeft (dit is +/- € 1,37)
+   * de reseller waarvan de naam start met een A en het minst gekocht heeft (€ 381,19)
    * Hints:
       * je moet hier _itereren_ over de resellers
       * Direct gevolg is dat je je binnen een _row context_ bevindt, dus moet je goed bedenken hoe je vanuit de tabel waarover je itereert de benodigde tabel met verkopen kunt benaderen
