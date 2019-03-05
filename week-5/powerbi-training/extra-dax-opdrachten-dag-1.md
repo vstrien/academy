@@ -1,6 +1,6 @@
 # Extra DAX opdrachten
 
-In de map "Starter" vind je een Power BI bestand genaamd "PBI-file-2.pbix". Voeg hier de volgende zaken aan toe:
+In de map "Starter" vind je een Power BI bestand genaamd [Start-dag-1.pbix](Starter/Start-dag-1.pbix). Voeg hier de volgende zaken aan toe:
 
 1. Geef een tabel weer met hierin de volgende kolommen (voor kolommen 2 t/m 4 drie aparte measures aanmaken):
    * Landnaam
