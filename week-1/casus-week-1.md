@@ -1,4 +1,5 @@
 # Introductie casus
+
 Je hebt als Business Intelligence consultant zojuist kennis gemaakt met je nieuwe klant: AdventureWorks. Deze (fabrikant/)distributeur van fietsen en bijbehorende benodigdheden is al enkele jaren actief met zowel fysieke ("brick-and-mortar") als online winkels. Voor het nieuwe Data Warehouse willen ze graag met een zgn. "greenfield" beginnen. Een bijzonder mooie en leuke klus voor een BI-consultant!
 
 Gedurende je traineeship zul je steeds meer (en verschillende) vaardigheden opdoen. De casus zal zich dan ook steeds verder uitbreiden: we starten met enkele analyses direct op het bronsysteem, maar zullen snel toewerken naar een grote totaaloplossing. Het is dan ook handig om vroeg in het proces al een schets te maken van de oplossing waar je naartoe gaat bouwen. Wanneer je training krijgt, gebruik dan de trainers ook als senior consultants die op je project langskomen: ze kunnen je zaken uitleggen die je lastig vindt, meedenken, maar ook advies geven vanuit hun ervaring.
