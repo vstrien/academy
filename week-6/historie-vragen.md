@@ -6,9 +6,11 @@ Probeer minimaal opgave 1 uit te werken, om scherp te krijgen wat er gebeurt bij
 
 ## Omgeving
 
-We hebben een miniatuur-DW waarin één bron leidt tot één dimensie en één feit. Schematisch ziet dit er als volgt uit:
+We hebben een miniatuur-DW met één die we historisch willen gaan opslaan. We hebben de volgende tabellen:
 
-![Historie-structuur](img/historie-structuur.png)
+* `dbo.SourceTable` is de tabel in de bron
+* `dbo.StagingTable` is onze *staging area*
+* `dbo.HistoryTable` is de historische opslag
 
 Dagelijks wordt de volledige inhoud van het bronsysteem aangeleverd. Hierbij is de volgende combinatie van attributen uniek:
   
@@ -47,15 +49,15 @@ Op dag 4 (4-2-2018) ziet de aanlevering er als volgt uit:
 |-----------------------|-----------------|--------------|-------------|--------|------------|-------------|
 | Sigma Data Consulting | Huizen          | 1-2-2018     | Laptop      | 6      | 1250       | 6000        |
 
-1. Hoe ziet de historie-laag er uit op dag 1, 2, 3 en 4?
+Hoe ziet de historie-laag er nu uit op dag 1, 2, 3 en 4?
 
 ### Dag 1
 
 In de historie-laag ziet er op dag 1 als volgt uit:
 
-| Klantnaam               | KlantWoonplaats | DatumAankoop | Productnaam | Aantal | Stuksprijs | Totaalprijs | Load_DTS | Load_EndDTS |
-|-------------------------|-----------------|--------------|-------------|--------|------------|-------------|----------|-------------|
-| Simchat Data Consulting | Huizen          | 1-2-2018     | Laptop      | 6      | 1250       | 6000        | 1-2-2018 | 31-12-9999  |
+| Klantnaam                 | KlantWoonplaats | DatumAankoop | Productnaam | Aantal | Stuksprijs | Totaalprijs | Load_DTS   | Load_EndDTS   |
+|---------------------------|-----------------|--------------|-------------|--------|------------|-------------|------------|---------------|
+| *Simchat Data Consulting* | *Huizen*        | *1-2-2018*   | *Laptop*    | *6*    | *1250*     | *6000*      | *1-2-2018* | *31-12-9999*  |
 
 ### Dag 2
 
