@@ -58,7 +58,7 @@ De toets bestaat uit een aantal vragen en SQL-statements waarvan je de uitkomst 
       * "Geen voertuig" voor alle overige gevallen
     * KleurBehalveGeel:
       * NULL as de kleur geel is
-      * De naam van de kleur in alle overige gevallen 
+      * De naam van de kleur in alle overige gevallen
     * Bonus: KleurBehalveGeelv2:
       * Inhoud identiek aan KleurBehalveGeel, maar dan op een andere manier opgelosts
 * Schrijf de uitkomst van bovenstaand statement uit
